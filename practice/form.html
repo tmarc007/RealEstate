@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .input-control{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <Label>Select Options: </Label>
+        <input class="input-control" type="text" value="predefined value">
+        <input class="input-control" type="number">
+        <input class="input-control" type="email" placeholder="Add your email">
+        <input class="input-control" type="password" required>
+        <input class="input-control" type="color" required>
+        <input class="input-control" type="date" disabled>
+
+        <Label>Select Options:</Label>
+        
+        <select>
+            <option value="option1">-- Option1 --</option>
+            <option value="option2">-- Option2 --</option>
+            <option value="option3">-- Option3 --</option>
+        </select>
+
+        <button>Add</button>
+    </form><br><br><br>
+
+
+    <h3>** In class exercise (Create a form for registering a product considering the next fields: Product Name, Description, Price, Color, and Payment Method) **</h3>
+    <h2>Product Exercise:</h2>
+    <Label>Select option for your product: </Label>
+        <input class="input-control" type="text" placeholder="Add product's name">
+        <input class="input-control" type="text" placeholder="Add a descripion">
+        <input class="input-control" type="number" placeholder="Add a price">
+        <label for="Select color">Select Color:</label>
+        <input class="input-control" type="color" required>
+        <label for="">Select the payment method:</label>
+        <select>
+            <option value="option1">-- Cash --</option>
+            <option value="option2">-- Credit Card --</option>
+            <option value="option3">-- Debit Card --</option>
+        </select>
+</body>
+</html>
