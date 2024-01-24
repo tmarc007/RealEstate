@@ -21,6 +21,9 @@ a{
     text-decoration: none;
     color: white;
 }
+h1{
+    margin-left: 150px;
+}
 h2{
     text-align: center;
     margin: 1rem 0;
@@ -32,6 +35,9 @@ p{
 }
 
 /*utilities*/
+.menu{
+    margin-left: 4rem;
+}
 .flex-header{
     display: flex;
     flex-direction: row;
@@ -69,7 +75,15 @@ p{
     text-align: center;
     margin: 1rem 0;
 }
-
+@media(max-width:768px){
+    .flex-header{
+        flex-direction:column;
+    }
+    .flex-header-v{
+        height: 20vh;
+        text-align: center;
+    }
+}
 /*header*/
 .site-init{
     background-image: url(img/header.jpg);
@@ -78,8 +92,10 @@ p{
     color: white;
 }
 .menu a{
-    margin-right: 2rem;
+    margin-right: 12rem;
     font-size: 1.5rem;
+    margin-left: -5rem;
+
 }
 .site-init p{
     font-size: 2rem;
@@ -88,7 +104,14 @@ p{
     background-color: #222222;
     color: white;
 }
-
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
 /*about us*/
 .about{
     margin-top: 1rem;
@@ -109,7 +132,14 @@ p{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
+@media(max-width:768px){
+    .flex-about{
+        flex-direction:column;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
 /*cards*/
 .house-item{
     background-color: #dedede;
